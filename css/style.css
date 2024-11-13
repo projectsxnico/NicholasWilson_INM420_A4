@@ -1,0 +1,183 @@
+/* ----------------------- MOBILE VIEW ---------------------- */
+
+/* Details for the <body> */
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Montserrat', sans-serif;
+
+    background-color: white;
+    color: black;
+
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Details for the <header> */
+header {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: #8b4513;
+    color: white;
+}
+
+/* Details for the list within the <header> */
+nav ul {
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+
+    padding: 0;
+    margin: 10px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Details for the list elements within the <header> */
+nav ul li {
+    margin: 0 30px;
+}
+
+/* Details for the <a>'s wihtin the <header> */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Details for the sections */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+/* h1, h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+} */
+
+/* Details for the <ul> assigned to the .guide_style class */
+.glide__slide {
+    list-style: none;
+}
+
+/* Details for the <img>'s in the .guide_style <ul> */
+.glide__slide img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    
+    border-radius: 8px;
+    margin: 0 auto;
+
+    /* object-fit: cover; */
+}
+
+/* Details for the <form> within the #contact <section> */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Details for the elements within the <form> */
+form label, form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    
+    margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+/* Details for the <form> submit button */
+form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    background-color: black;
+    color: white;
+   
+    font-size: 16px;
+}
+
+/* Details for the <footer> */
+footer {
+    display: flex;
+    flex-direction: column;
+
+    gap: 80px;
+
+    margin-top: 200px;
+    margin-bottom: 80px;
+
+    background-color: #8b4513;;
+    color: white;
+
+    text-align: center;
+}
+
+/* Details for .icons: icons is the class for social 
+media icons */
+.icons {
+    width: 40px;
+    height: 40px;   
+}
+
+/* Details for #socialinfo:
+#socialinfo is the id for the <div> wrapping the <a>'s for the social 
+icons */
+#socialinfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ------------------------ DESKTOP VIEW ------------------------- */
+
+/* Screens larger than 650px */
+@media only screen and (min-width: 650px) {
+
+    /* Details fo the <a>'s in the <header> */
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* Details for the .glide_slides <ul> within the
+    #products <section> */
+    .glide__slides {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Details for the .glide_slides <ul> within the
+    #products <section> and the <form> within the #contact <section>  */
+    .glide__slides, form {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Screens larger than 900px */
+@media only screen and (min-width: 900px) {
+    
+    .glide__slide {
+        width: 30%;
+    }
+}
+
+
